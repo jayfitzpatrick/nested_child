@@ -48,5 +48,7 @@ galaxy_info:
     #       Maximum 20 tags per role.
 
 dependencies:
-  - scm=git src=git@github.com:jayfitzpatrick/nested_grandchild.git
+  - name: nested_grandchild
+    src: git@github.com:jayfitzpatrick/nested_grandchild.git
+    scm: git
  
