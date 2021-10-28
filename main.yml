@@ -1,0 +1,20 @@
+---
+- name: parent playbook
+  gather_facts: false
+  hosts: localhost
+  remote_user: root
+  become: true
+
+  tasks:
+
+    - name: child play
+      ansible.builtin.debug:
+        msg: "child Play"
+
+    - name: child task
+      import_tasks: tasks/main.yml
+
+    - name: Calling GrandChild
+      include_role:
+        name: nested_grandchild
+        tasks_from: main.yml
