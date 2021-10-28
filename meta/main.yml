@@ -47,6 +47,7 @@ galaxy_info:
     # NOTE: A tag is limited to a single word comprised of alphanumeric characters.
     #       Maximum 20 tags per role.
 
-dependencies: []
-  #nested_grandchild
+dependencies:
+  - src: nested_grandchild
+    name: nested_grandchild
   
