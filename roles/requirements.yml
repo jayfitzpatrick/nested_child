@@ -1,5 +1,5 @@
 ---
 
-  - name: nested_child
+  - name: nested_grandchild
     src: git@github.com:jayfitzpatrick/nested_grandchild.git
     scm: git
